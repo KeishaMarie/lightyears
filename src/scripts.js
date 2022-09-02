@@ -10,11 +10,10 @@ export default class Spaceage {
   }
 
   planetAge () {
-    let earthYears;
-    this.mercuryAge = earthYears * .24
-    return mercuryAge
-  }
-}
-
-// in planetAge i will multiply users input of earthyears by .24 which is mercuryAge's calculation.
-// earthYears * .24 = mercuryAge
+    let earthYearsInput;
+    this.mercuryAge = earthYearsInput * .24;
+    this.venusAge = earthYearsInput * .62;
+    this.marsAge = earthYearsInput * 1.88;
+    this.jupiterAge = earthYearsInput * 11.86;
+  };
+};
