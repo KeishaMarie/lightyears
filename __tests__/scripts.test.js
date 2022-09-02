@@ -4,8 +4,8 @@ describe('Spaceage', () => {
 
   test('should return mercuryYears', () => {
   // let spaceage;
-  let mercuryYears = 32
-  let spaceage = new Spaceage.constructor(mercuryYears);
+  let mercuryYears;
+  let spaceage = new Spaceage.mercuryYears(32);
   mercuryAge = spaceage * .24;
   expect(spaceage.mercuryYears).toEqual(7.68);
   });
