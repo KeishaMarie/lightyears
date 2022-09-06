@@ -1,11 +1,14 @@
-import {Spaceage} from './../src/scripts.js'
+import Spaceage from './../src/scripts.js'
 
 describe('Spaceage', () => {
   
-  const earthYearsInput = 32
-  let mercuryAge;
+  let spaceage 
+   beforeEach(() => {
+    spaceage = new Spaceage(32)
+    let mercuryage = spaceage.calculateMercuryAge()
+   });
   test('should return mercuryAge based on earthYear 32', () => {
-    expect(mercuryAge).toEqual(7.68);
+    expect(mercuryage).toEqual(7.68);
   });
 
 

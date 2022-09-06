@@ -1,19 +1,28 @@
 //Business Logic
 
 export default class Spaceage {
-  constructor(mercuryAge, venusAge, marsAge, jupiterAge, lifeEx) {
-  this.mercuryAge = mercuryAge;
-  this.venusAge = venusAge;
-  this.marsAge = marsAge;
-  this.jupiterAge = jupiterAge;
-  this.lifeEx = lifeEx;
+  constructor(earthAge) {
+  this.earthAge = earthAge
+  this.mercuryAge;
+  this.venusAge;
+  this.marsAge;
+  this.jupiterAge;
+  this.lifeEx;
+  
   }
 
   planetAge () {
-    let earthYearsInput;
-    this.mercuryAge = earthYearsInput * .24;
-    this.venusAge = earthYearsInput * .62;
-    this.marsAge = earthYearsInput * 1.88;
-    this.jupiterAge = earthYearsInput * 11.86;
+    this.mercuryAge = this.earthAge * .24
+    this.venusAge = this.earthAge * .62;
+    this.marsAge = this.earthAge * 1.88;
+    this.jupiterAge = this.earthAge * 11.86;
   };
+  calculateMercuryAge () {
+    mercuryAge = this.earthAge * .24
+    this.mercuryAge = this.mercuryAge
+    return mercuryAge
+  }
 };
+
+
+// , venusAge, marsAge, jupiterAge, lifeEx)
