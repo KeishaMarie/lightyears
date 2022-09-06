@@ -7,7 +7,10 @@ export default class Spaceage {
     this.venusAge;
     this.marsAge;
     this.jupiterAge;
-    this.lifeEx;
+    this.mercuryYearsLeft;
+    this.venusYearsLeft;
+    this.marsYearsLeft;
+    this.jupiterYearsLeft;
   
   }
 
@@ -29,7 +32,10 @@ export default class Spaceage {
     let venusYearsLeft = yearsLeft * .62;
     let marsYearsLeft = yearsLeft * 1.88;
     let jupiterYearsLeft = yearsLeft * 11.86;
-
+    this.mercuryYearsLeft = mercuryYearsLeft
+    this.venusYearsLeft = venusYearsLeft
+    this.marsYearsLeft = marsYearsLeft
+    this.jupiterYearsLeft = jupiterYearsLeft
   }
 };
 
