@@ -3,10 +3,12 @@ import Spaceage from './../src/scripts.js'
 describe('Spaceage', () => {
   
   let spaceage;
-  let mercuryAge;
+
    beforeEach(() => {
     spaceage = new Spaceage(32);
-    spaceage.planetAge()
+    spaceage.planetAge();
+    spaceage.lifeExpectancy(75);
+
    });
 
   test('should return mercuryAge based on earthAge 32', () => {
@@ -17,4 +19,7 @@ describe('Spaceage', () => {
     expect(spaceage.venusAge).toEqual(19.84);
   })
 
+  test('should return years left if they were on mercury', () => {
+    expect(spaceage.mercuryYearsLeft).toEqual(10.32);
+  })
 });

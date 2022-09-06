@@ -21,6 +21,16 @@ export default class Spaceage {
     this.marsAge = marsAge
     this.jupiterAge = jupiterAge
   };
+
+  lifeExpectancy (averageEarthLife) {
+    let earthAge = this.earthAge
+    let yearsLeft = averageEarthLife - earthAge
+    let mercuryYearsLeft = yearsLeft * .24
+    let venusYearsLeft = yearsLeft * .62;
+    let marsYearsLeft = yearsLeft * 1.88;
+    let jupiterYearsLeft = yearsLeft * 11.86;
+
+  }
 };
 
 
