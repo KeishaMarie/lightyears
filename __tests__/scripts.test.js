@@ -7,7 +7,7 @@ describe('Spaceage', () => {
    beforeEach(() => {
     spaceage = new Spaceage(32);
     spaceage.planetAge();
-    spaceage.lifeExpectancy(75);
+    spaceage.lifeExpectancy(30);
 
    });
 
@@ -20,6 +20,14 @@ describe('Spaceage', () => {
   })
 
   test('should return years left if they were on mercury', () => {
-    expect(spaceage.mercuryYearsLeft).toEqual(10.32);
+    expect(spaceage.mercuryYearsLeft).toEqual(.48);
+  })
+
+  test('should return years left if they were on venus', () => {
+    expect(spaceage.venusYearsLeft).toEqual(1.24);
+  })
+
+  test('should return years passed life expectancy on mercury', () => {
+    expect(spaceage.mercuryYearsLeft).toEqual(.48)
   })
 });
