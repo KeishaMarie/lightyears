@@ -27,13 +27,21 @@ describe('Spaceage', () => {
   test('should return jupiterAge based on earthAge 32', () => {
     expect(spaceage.jupiterAge).toEqual(379.52);
   })
-
+  
   test('should return years left if they were on mercury', () => {
     expect(spaceage.mercuryYearsLeft).toEqual(.48);
   })
 
   test('should return years left if they were on venus', () => {
     expect(spaceage.venusYearsLeft).toEqual(1.24);
+  })
+
+  test('should return years left if they were on Mars', () => {
+    expect(spaceage.marsYearsLeft).toEqual(3.76);
+  })
+
+  test('should return years left if they were on Jupiter', () => {
+    expect(spaceage.jupiterYearsLeft).toEqual(23.72);
   })
 
   test('should return years passed life expectancy on mercury', () => {
