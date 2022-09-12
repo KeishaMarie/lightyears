@@ -51,12 +51,18 @@ describe('Spaceage', () => {
     expect(spaceage.jupiterYearsLeft).toEqual(23.72);
   })
 
+
+
   test('should return years passed life expectancy on mercury', () => {
     expect(spaceage.mercuryYearsLeft).toEqual(.48);
   })
 
   test('should return years passed life expectancy on Venus', () => {
     expect(spaceage.venusYearsLeft).toEqual(1.24);
+  })
+
+  test('should return years passed life expectancy on Mars', () => {
+    expect(spaceage.marsYearsLeft).toEqual(3.76);
   })
 
   test('should return Keith Richards age on Jupiter in dog years in the year 2073', () => {
