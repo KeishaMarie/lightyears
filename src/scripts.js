@@ -15,27 +15,23 @@ export default class Spaceage {
   }
 
   planetAge () {
-    let mercuryAge = this.earthAge * .24
-    let venusAge = this.earthAge * .62;
-    let marsAge = this.earthAge * 1.88;
-    let jupiterAge = this.earthAge * 11.86;
-    this.mercuryAge = mercuryAge
-    this.venusAge = venusAge
-    this.marsAge = marsAge
-    this.jupiterAge = jupiterAge
+    this.mercuryAge = this.earthAge * .24
+    this.venusAge = this.earthAge * .62;
+    this.marsAge = this.earthAge * 1.88;
+    this.jupiterAge = this.earthAge * 11.86;
   };
 
   lifeExpectancy (averageEarthLife) {
     let earthAge = this.earthAge
     let yearsLeft = averageEarthLife - earthAge
-    let mercuryYearsLeft = yearsLeft * .24
-    let venusYearsLeft = yearsLeft * .62;
-    let marsYearsLeft = yearsLeft * 1.88;
-    let jupiterYearsLeft = yearsLeft * 11.86;
-    this.mercuryYearsLeft = Math.abs(mercuryYearsLeft)
-    this.venusYearsLeft = Math.abs(venusYearsLeft)
-    this.marsYearsLeft = Math.abs(marsYearsLeft)
-    this.jupiterYearsLeft = Math.abs(jupiterYearsLeft)
+    this.mercuryYearsLeft = Math.abs(yearsLeft * .24);
+    this.venusYearsLeft = Math.abs(yearsLeft * .62);
+    this.marsYearsLeft = Math.abs(yearsLeft * 1.88);
+    this.jupiterYearsLeft = Math.abs(yearsLeft * 11.86);
+    // this.mercuryYearsLeft = Math.abs(mercuryYearsLeft)
+    // this.venusYearsLeft = Math.abs(venusYearsLeft)
+    // this.marsYearsLeft = Math.abs(marsYearsLeft)
+    // this.jupiterYearsLeft = Math.abs(jupiterYearsLeft)
   }
 };
 
