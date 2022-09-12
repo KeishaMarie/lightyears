@@ -8,6 +8,7 @@ describe('Spaceage', () => {
     spaceage = new Spaceage(32);
     spaceage.planetAge();
     spaceage.lifeExpectancy(30);
+    spaceage.dogYearAge();
 
    });
 
@@ -29,5 +30,9 @@ describe('Spaceage', () => {
 
   test('should return years passed life expectancy on mercury', () => {
     expect(spaceage.mercuryYearsLeft).toEqual(.48)
+  })
+
+  test('should return Keith Richards age on Jupiter in dog years in the year 2073', () => {
+    expect(spaceage.dogYearAge).toEqual(868)
   })
 });

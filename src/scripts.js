@@ -11,6 +11,7 @@ export default class Spaceage {
     this.venusYearsLeft;
     this.marsYearsLeft;
     this.jupiterYearsLeft;
+    this.dogYears;
   
   }
 
@@ -28,11 +29,8 @@ export default class Spaceage {
     this.venusYearsLeft = Math.abs(yearsLeft * .62);
     this.marsYearsLeft = Math.abs(yearsLeft * 1.88);
     this.jupiterYearsLeft = Math.abs(yearsLeft * 11.86);
-    // this.mercuryYearsLeft = Math.abs(mercuryYearsLeft)
-    // this.venusYearsLeft = Math.abs(venusYearsLeft)
-    // this.marsYearsLeft = Math.abs(marsYearsLeft)
-    // this.jupiterYearsLeft = Math.abs(jupiterYearsLeft)
-  }
+  };
+
 };
 
 
