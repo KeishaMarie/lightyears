@@ -65,6 +65,10 @@ describe('Spaceage', () => {
     expect(spaceage.marsYearsLeft).toEqual(3.76);
   })
 
+  test('should return years passed life expectancy on Jupiter', () => {
+    expect(spaceage.jupiterYearsLeft).toEqual(23.72);
+  })
+
   test('should return Keith Richards age on Jupiter in dog years in the year 2073', () => {
     expect(spaceage.jupiterDogYears).toEqual(10294.48)
   })
