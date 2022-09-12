@@ -8,7 +8,7 @@ describe('Spaceage', () => {
     spaceage = new Spaceage(32);
     spaceage.planetAge();
     spaceage.lifeExpectancy(30);
-    spaceage.dogYearAge();
+    spaceage.dogYearAge(124);
 
    });
 
@@ -33,6 +33,6 @@ describe('Spaceage', () => {
   })
 
   test('should return Keith Richards age on Jupiter in dog years in the year 2073', () => {
-    expect(spaceage.dogYearAge).toEqual(868)
+    expect(spaceage.jupiterDogYears).toEqual(10294.48)
   })
 });

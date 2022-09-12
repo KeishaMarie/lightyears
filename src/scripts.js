@@ -12,6 +12,7 @@ export default class Spaceage {
     this.marsYearsLeft;
     this.jupiterYearsLeft;
     this.dogYears;
+    this.jupiterDogYears;
   
   }
 
@@ -31,6 +32,10 @@ export default class Spaceage {
     this.jupiterYearsLeft = Math.abs(yearsLeft * 11.86);
   };
 
+  dogYearAge(earthAge) {
+    this.dogYears = earthAge * 7
+    this.jupiterDogYears = this.dogYears * 11.86;
+  }
 };
 
 
