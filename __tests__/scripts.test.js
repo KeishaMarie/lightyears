@@ -20,6 +20,10 @@ describe('Spaceage', () => {
     expect(spaceage.venusAge).toEqual(19.84);
   })
 
+  test('should return marsAge based on earthAge 32', () => {
+    expect(spaceage.marsAge).toEqual(60.16);
+  })
+
   test('should return years left if they were on mercury', () => {
     expect(spaceage.mercuryYearsLeft).toEqual(.48);
   })
